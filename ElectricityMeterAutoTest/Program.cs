@@ -1,0 +1,24 @@
+﻿using ElectricityMeterAutoTest.Business;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ElectricityMeterAutoTest
+{
+    internal static class Program
+    {
+        /// <summary>
+        /// Uygulamanın ana girdi noktası.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            MainBussinesLogics mainBussinesLogics = new MainBussinesLogics();   
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new LoginForm());
+        }
+    }
+}
